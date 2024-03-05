@@ -10,7 +10,17 @@
   public static void main(String[] args){
     Bank bankOfGods = new Bank();
     System.out.println(bankOfGods.accountOne.getBalance());
-    bankOfGods.accountOne.setBalance(5000);
+    bankOfGods.accountOne.consignar(5000);
+    System.out.println(bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.consignar(2000);
+    System.out.println(bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.consignar(1000);
+    System.out.println(bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.retirar(1000);
+    System.out.println(bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.retirar(3000);
+    System.out.println(bankOfGods.accountOne.getBalance());
+    bankOfGods.accountOne.retirar(2000);
     System.out.println(bankOfGods.accountOne.getBalance());
     System.out.println(bankOfGods.accountOne.getMonthlyInterest());
 
