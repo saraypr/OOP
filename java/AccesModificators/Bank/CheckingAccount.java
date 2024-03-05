@@ -16,9 +16,14 @@ public class CheckingAccount{
   public int getBalance(){
     return this.balance;
   }
-  
-  public void setBalance(int newBalance){
+    public void setBalance(int newBalance){
     this.balance = newBalance;
+  }
+     public void consignar(int consignar){
+    this.balance = newBalance + consignar;
+  }
+    public void retirar(int retirar){
+    this.balance = newBalance - retirar;
   }
 
   public double getMonthlyInterest(){
