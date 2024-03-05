@@ -20,10 +20,10 @@ public class CheckingAccount{
     this.balance = newBalance;
   }
      public void consignar(int consignar){
-    this.balance = newBalance + consignar;
+    this.balance = balance + consignar;
   }
     public void retirar(int retirar){
-    this.balance = newBalance - retirar;
+    this.balance = balance - retirar;
   }
 
   public double getMonthlyInterest(){
